@@ -1,0 +1,12 @@
+<h1>Liste des Annonces </h1>
+<a  (click)="fndisplayListe()"> liste des annonces </a>
+<a  (click)="fndisplayCout()"> Estimation des couts </a>
+
+<div [hidden]="displayListe">
+    <app-list-annonces></app-list-annonces>
+</div>
+
+
+<div [hidden]="displayCout">
+    <app-estimation-cout></app-estimation-cout>
+</div>

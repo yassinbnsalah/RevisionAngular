@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from '../models/product';
 import { Category } from '../models/category';
+import { Annonce } from '../models/annonce';
 
 @Injectable({
   providedIn: 'root'
@@ -10,9 +11,17 @@ import { Category } from '../models/category';
 export class ProjectService {
   urlProduct  = "http://localhost:3000/product"
   urlCategory = "http://localhost:3000/category"
+  urlAnnonce  = "http://localhost:3000/Annonce" 
   constructor(private http : HttpClient) { }
 
+  /*********************************ANNONCES  */
+  getAllAnnonce():Observable<Annonce[]>{
+    return this.http.get<Annonce[]>(this.urlAnnonce)
+  }
 
+
+
+  /*********************************ANNONCES  */
   GetAllProduct():Observable<Product[]>{
     return this.http.get<Product[]>(this.urlProduct);
   }

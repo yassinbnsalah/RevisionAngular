@@ -13,6 +13,9 @@ import { UpdateCategoryComponent } from './core/category/update-category/update-
 import { DetailCategoryComponent } from './core/category/detail-category/detail-category.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AnnoncesComponent } from './core/annonces/annonces/annonces.component';
+import { ListAnnoncesComponent } from './core/annonces/list-annonces/list-annonces.component';
+import { EstimationCoutComponent } from './core/annonces/estimation-cout/estimation-cout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +23,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AddProductComponent,
     UpdateProductComponent,
     DetailsProductComponent,
+    AnnoncesComponent,
+    ListAnnoncesComponent,
+    EstimationCoutComponent,
    
   ],
   imports: [

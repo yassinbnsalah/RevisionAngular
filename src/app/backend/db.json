@@ -1,35 +1,44 @@
 {
-  "product": [
-    {
-      "name": "Sumsung",
-      "description": "yessss",
-      "price": "10",
-      "qte": "15",
-      "category": "1",
-      "id": 2
-    },
-    {
-      "name": "iphone13",
-      "description": "iphone13",
-      "price": "12",
-      "qte": "12",
-      "category": "1",
-      "id": 3
-    }
-  ],
-  "category": [
-    {
-      "id": 1,
-      "name": "some comment22",
-      "nbProduct": 1
-    },
-    {
-      "name": "TVV",
-      "id": 2
-    },
-    {
-      "name": "testttt3RR3",
-      "id": 3
-    }
-  ]
+    "Annonce": [
+        {
+            "id": 1,
+            "titre": "string",
+            "description": "string",
+            "position": 1,
+            "etat": "en attente"
+        }
+    ],
+    "product": [
+        {
+            "name": "Sumsung",
+            "description": "yessss",
+            "price": "10",
+            "qte": "15",
+            "category": "1",
+            "id": 2
+        },
+        {
+            "name": "iphone13",
+            "description": "iphone13",
+            "price": "12",
+            "qte": "12",
+            "category": "1",
+            "id": 3
+        }
+    ],
+    "category": [
+        {
+            "id": 1,
+            "name": "some comment22",
+            "nbProduct": 1
+        },
+        {
+            "name": "TVV",
+            "id": 2
+        },
+        {
+            "name": "testttt3RR3",
+            "id": 3
+        }
+    ]
 }

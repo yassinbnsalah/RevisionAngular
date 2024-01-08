@@ -7,10 +7,15 @@ import { DetailsProductComponent } from './core/product/details-product/details-
 import { ListCategoryComponent } from './core/category/list-category/list-category.component';
 import { AddCategoryComponent } from './core/category/add-category/add-category.component';
 import { UpdateCategoryComponent } from './core/category/update-category/update-category.component';
+import { AnnoncesComponent } from './core/annonces/annonces/annonces.component';
+import { AppComponent } from './core/annonces/app/app.component';
+
 
 const routes: Routes = [
   /*{path:"listeProduct" , component:ListeProductComponent},
   {path:"add/product" , component:AddProductComponent},*/
+  {path:"app" , component:AppComponent},
+  {path:"annonces", component:AnnoncesComponent},
   {
     path: "product",
     children: [
