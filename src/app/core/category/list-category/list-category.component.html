@@ -1,1 +1,18 @@
-<p>list-category works!</p>
+<h1> Liste de categories  </h1>
+
+<button (click)="GoToCategoryAdd()"> Ajouter Category </button>
+<table border="2px solid black">
+    <tr> 
+        <td> ID </td>
+        <td> Name </td>
+        <td> Delete </td>
+        <td> Update </td>
+    </tr>
+    <tr *ngFor="let categorie of categories"> 
+        <td> {{categorie.id }} </td>
+        <td> {{categorie.name }} </td>
+        <td><button> Delete </button></td>
+        <td><button (click)="GoToCategoryUpdate(categorie.id)"> Update </button></td>
+    </tr>
+    
+</table>

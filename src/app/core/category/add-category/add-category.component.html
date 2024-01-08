@@ -1,1 +1,17 @@
-<p>add-category works!</p>
+<h1> Ajouter category </h1>
+
+<form #form="ngForm">
+    <label>name</label>
+    <input type="text" name="name" [(ngModel)]="category.name" required
+        minlength="3" #namecategory="ngModel">
+    <span *ngIf="namecategory.invalid && namecategory.touched">
+        <span *ngIf="namecategory.errors?.['required']">
+            required
+        </span>
+        <span *ngIf="namecategory.errors?.['minlength']">
+            minlength
+        </span>
+    </span>
+    <button (click)="saveCategory(form.value)">Save </button>
+
+</form>

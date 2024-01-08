@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from '../models/product';
+import { Category } from '../models/category';
 
 @Injectable({
   providedIn: 'root'
@@ -30,5 +31,21 @@ export class ProjectService {
 
   UpdateProduct(id:number , product:Product){
     return this.http.put(this.urlProduct+"/"+id , product)
+  }
+
+  GetAllGategory():Observable<Category[]>{
+    return this.http.get<Category[]>(this.urlCategory);
+  }
+
+  GetGategoryID(id:any):Observable<Category>{
+    return this.http.get<Category>(this.urlCategory+"/"+id)
+  }
+
+  AddCategory(category :any){
+    return this.http.post(this.urlCategory , category)
+  }
+
+  UpdateCategory(id:any , category :Category){
+    return this.http.put(this.urlCategory+"/"+id , category)
   }
 }

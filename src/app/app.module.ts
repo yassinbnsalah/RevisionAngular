@@ -12,7 +12,7 @@ import { AddCategoryComponent } from './core/category/add-category/add-category.
 import { UpdateCategoryComponent } from './core/category/update-category/update-category.component';
 import { DetailCategoryComponent } from './core/category/detail-category/detail-category.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,15 +20,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     AddProductComponent,
     UpdateProductComponent,
     DetailsProductComponent,
-    ListCategoryComponent,
-    AddCategoryComponent,
-    UpdateCategoryComponent,
-    DetailCategoryComponent
+   
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+
     ReactiveFormsModule ,
   ],
   providers: [],
